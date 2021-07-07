@@ -31,8 +31,21 @@ namespace LCU.State.API.Devices.ConfigManager.Harness
         #endregion
 
         #region API Methods
+        public virtual async Task<DevicesConfigManagerState> ConfigureInfrastructure(string infraType, string template)
+        {
+            //  TODO:  Provision Digital Twins instance into new provisioning CDI
+
+            state.DevicesConfigured = true;
+            
+            return state;
+        }
+        
         public virtual async Task<DevicesConfigManagerState> Ensure()
         {
+            //Temp - Should load whether or not it actually is
+            
+            state.DevicesConfigured = true;
+            
             return state;
         }
         #endregion

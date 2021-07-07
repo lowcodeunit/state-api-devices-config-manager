@@ -23,6 +23,8 @@ namespace LCU.State.API.Devices.ConfigManager
             {
                 await mgr.Ensure();
 
+                log.LogInformation("Refreshing.");
+
                 return await mgr.WhenAll(
                     
                 );

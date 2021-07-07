@@ -8,6 +8,9 @@ namespace LCU.State.API.Devices.ConfigManager.Models
     public class DevicesConfigManagerState
     {
         [DataMember]
+        public virtual bool DevicesConfigured { get; set; }
+
+        [DataMember]
         public virtual bool Loading { get; set; }
     }
 }
